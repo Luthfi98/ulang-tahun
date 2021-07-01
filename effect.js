@@ -265,9 +265,15 @@ $('document').ready(function(){
 			i=i+1;
 			$("p:nth-child("+i+")").fadeIn('slow').delay(1500);
 			if(i==23){
-				$("p:nth-child(22)").fadeOut('slow').promise().done(function () {
-					$('.cake').fadeIn('fast');
-				});
+				$('.cake').fadeIn('fast');
+				$('#text4').text('S')
+				$('#text5').text('A')
+				$('#text6').text('Y')
+				$('#text7').text('A')
+				$('#text8').text('N')
+				$('#text9').text('G')
+				// $("p:nth-child(22)").fadeOut('slow').promise().done(function () {
+				// });
 				
 			}
 			else{
