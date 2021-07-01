@@ -9,7 +9,7 @@ $('document').ready(function(){
 			$('#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9').stop();
 			$('#b11').animate({top:100, left: vw-150},500);
 			$('#b22').animate({top:100, left: vw-50},500);
-			$('#b33').animate({top:100, left: vw+150},500);
+			$('#b33').animate({top:100, left: vw+50},500);
 			$('#b44').animate({top:240, left: vw-250},500);
 			$('#b55').animate({top:240, left: vw-150},500);
 			$('#b66').animate({top:240, left: vw-50},500);
@@ -197,9 +197,9 @@ $('document').ready(function(){
 				$('#b7').attr('id','b77')
 				$('#b8').attr('id','b88')
 				$('#b9').attr('id','b99')
-				$('#b11').animate({top:100, left: vw-125},500);
-				$('#b22').animate({top:100, left: vw-25},500);
-				$('#b33').animate({top:100, left: vw+125},500);
+				$('#b11').animate({top:100, left: vw-150},500);
+				$('#b22').animate({top:100, left: vw-50},500);
+				$('#b33').animate({top:100, left: vw+50},500);
 				$('#b44').animate({top:240, left: vw-250},500);
 				$('#b55').animate({top:240, left: vw-150},500);
 				$('#b66').animate({top:240, left: vw-50},500);
@@ -265,15 +265,15 @@ $('document').ready(function(){
 			i=i+1;
 			$("p:nth-child("+i+")").fadeIn('slow').delay(1500);
 			if(i==23){
-				$('.cake').fadeIn('fast');
-				$('#text4').text('S')
-				$('#text5').text('A')
-				$('#text6').text('Y')
-				$('#text7').text('A')
-				$('#text8').text('N')
-				$('#text9').text('G')
-				// $("p:nth-child(22)").fadeOut('slow').promise().done(function () {
-				// });
+				$("p:nth-child(23)").fadeOut('slow').promise().done(function () {
+					$('.cake').fadeIn('fast');
+					$('#text4').text('S')
+					$('#text5').text('A')
+					$('#text6').text('Y')
+					$('#text7').text('A')
+					$('#text8').text('N')
+					$('#text9').text('G')
+				});
 				
 			}
 			else{
