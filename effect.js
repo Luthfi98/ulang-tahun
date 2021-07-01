@@ -261,10 +261,10 @@ $('document').ready(function(){
 		var i;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('slow').delay(1000).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
-			if(i==20){
+			$("p:nth-child("+i+")").fadeIn('slow').delay(1500);
+			if(i==23){
 				$("p:nth-child(22)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
 				});
